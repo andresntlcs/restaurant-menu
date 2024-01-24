@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
 :root {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Lexend', 'sans-serif';
 }
