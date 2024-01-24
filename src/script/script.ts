@@ -116,7 +116,7 @@ function displayMenuItems(menuItems: MenuItem[]) {
         return `<article class="flex justify-center items-center mx-2 my-5 text-white">
             <div class="bg-gray-900 p-3 rounded-md duration-500 hover:scale-105 hover:shadow-lg">
                 <img src="${listing.img}" class="rounded-md size-1/2" alt="${listing.title}" />
-                    <header class="flex justify-between my-3 text-md">
+                    <header class="flex flex-col justify-between my-3 text-md">
                         <h1>${listing.title}</h1>
                         <h1>$${listing.price}</h1>
                     </header>
