@@ -1,5 +1,7 @@
 import "../styles.css";
 
+import "../assets/breakfast-base.jpg";
+
 function test() {
 
   const divider = document.createElement("hr");
