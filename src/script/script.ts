@@ -104,29 +104,34 @@ window.addEventListener('DOMContentLoaded', function() {
     displayMenuItems(menu);
 });
 
-interface MenuItem {
+interface MenuStats {
+    id: number;
     img: string;
     title: string;
     price: number;
     desc: string;
 }
 
-function displayMenuItems(menuItems: MenuItem[]) {
+function displayMenuItems(menuItems: MenuStats[]) {
     let displayMenu: string[] | string = menuItems.map(function(listing) {
-        return `<article class="flex justify-center items-center mx-2 my-5 text-white">
-            <div class="bg-gray-900 p-3 rounded-md duration-500 hover:scale-105 hover:shadow-lg">
-                <img src="${listing.img}" class="rounded-md size-1/2" alt="${listing.title}" />
-                    <header class="flex flex-col justify-between my-3 text-md">
-                        <h1>${listing.title}</h1>
-                        <h1>$${listing.price}</h1>
-                    </header>
-                <p class="text-sm w-fit">${listing.desc}</p>
-            </div>
-        </article>`;
+        return `<div>${listing.title}</div>`;
+
+
+
+        // return `<article class=" mx-2 my-5 text-gray-900">
+        //     <div class="flex flex-col justify-center items-center p-3 duration-500 hover:scale-105 hover:shadow-lg">
+        //         <img src="${listing.img}" class="rounded-md size-1/2" alt="${listing.title}" />
+        //             <header class="flex justify-between my-3 text-md">
+        //                 <h1>${listing.title}</h1>
+        //                 <h1>$${listing.price}</h1>
+        //             </header>
+        //         <p class="text-sm w-fit">${listing.desc}</p>
+        //     </div>
+        // </article>`;
     });
 
     if (MenuItems) {
-        displayMenu = displayMenu.join("");
+        displayMenu = displayMenu.join("//");
         MenuItems.innerHTML = displayMenu;
     }
 }
