@@ -116,8 +116,6 @@ function displayMenuItems(menuItems: MenuStats[]) {
     let displayMenu: string[] | string = menuItems.map(function(listing) {
         return `<div>${listing.title}</div>`;
 
-
-
         // return `<article class=" mx-2 my-5 text-gray-900">
         //     <div class="flex flex-col justify-center items-center p-3 duration-500 hover:scale-105 hover:shadow-lg">
         //         <img src="${listing.img}" class="rounded-md size-1/2" alt="${listing.title}" />
