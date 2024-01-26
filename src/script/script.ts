@@ -60,6 +60,8 @@ const filterButtons = document.querySelectorAll('.filter');
 
 window.addEventListener('DOMContentLoaded', function() {
 
+    displayMenu(menu);
+
     filterButtons.forEach(button => {
         button.addEventListener('click', function(this: HTMLButtonElement) {
             const category = this.id.toLowerCase();
@@ -72,11 +74,10 @@ window.addEventListener('DOMContentLoaded', function() {
 
 function displayMenu(menu: menuTypes[]){
     let displayMenu: string | string[] = menu.map(function (item) {
-        return `<p>${item.title}</p><br/>`
+        return `<p>${item.title}</p><br>`
     
        });
     
        displayMenu = displayMenu.join("");
        menuSection.innerHTML = displayMenu;
-    
 }
