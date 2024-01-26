@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  
   <head>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
@@ -10,17 +9,22 @@
   </head>
 
   <body>
-
-    <section id="MenuPage" class="h-screen flex flex-col justify-center items-center">
+    <section
+      id="RestaurantMenu"
+      class="h-screen flex flex-col justify-center items-center"
+    >
       <h1>DA MENU</h1>
-        <div id="filters">
-          <button id="All">ALL</button>
-          <button id="Breakfast">BREAKFAST</button>
-          <button id="Meal">MEAL</button>
-          <button id="Sides">SIDES</button>
-          <button id="Drinks">DRINKS</button>
-        </div>
-        <div id="MenuDisplay"></div>
+      <div id="filters">
+        <button id="All" class="filter">ALL</button>
+        <button id="breakfast" class="filter">BREAKFAST</button>
+        <button id="meal" class="filter">MEAL</button>
+        <button id="sides" class="filter">SIDES</button>
+        <button id="drinks" class="filter">DRINKS</button>
+      </div>
+      <div
+        id="MenuSection"
+        class="flex flex-col justify-center items-center"
+      ></div>
     </section>
 
     <script type="module" src="/src/script/script.ts"></script>
