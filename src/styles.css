@@ -8,17 +8,20 @@
     font-family: 'Lexend', 'sans-serif';
 }
 
+hr {
+    @apply m-2 h-1 w-1/2 bg-black;
+}
 
 #RestaurantMenu {
-    @apply m-10;
+    @apply h-screen flex flex-col items-center m-10;
 }
 
 #RestaurantMenu h1 {
-    @apply text-5xl font-black mb-3;
+    @apply text-5xl font-black bg-black text-white p-2 px-4 mb-3 duration-1000 hover:shadow-lg hover:shadow-gray-500;
 }
 
 #MenuSection {
-    @apply text-sm mt-5;
+    @apply text-sm mt-5 text-center;
 }
 
 #filters {
@@ -26,5 +29,5 @@
 }
 
 #filters button {
-    @apply p-1 px-3 border-2 border-black rounded-lg transition-colors hover:bg-black hover:text-white hover:shadow-sm hover:shadow-black;
+    @apply p-1 px-3 border-2 border-black rounded-lg transition-colors hover:bg-black hover:text-white hover:shadow-sm hover:shadow-gray-500;
 }
