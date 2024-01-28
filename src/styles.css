@@ -18,7 +18,7 @@ hr {
 }
 
 #RestaurantMenu h1 {
-    @apply text-5xl font-black bg-white text-orange-500 p-2 px-4 mb-3 duration-1000 hover:shadow-md hover:shadow-gray-500;
+    @apply text-5xl font-black bg-white rounded-lg text-orange-500 p-2 px-4 mb-3 duration-1000 hover:shadow-md hover:shadow-gray-500;
 }
 
 #filters {
