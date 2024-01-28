@@ -1,58 +1,70 @@
 const menu = [
     {
         title: "Signature Breakfast",
-        category: "breakfast"
+        category: "breakfast",
+        price: 10,
     },
     {
         title: "Pancakes",
-        category: "breakfast"
+        category: "breakfast",
+        price: 10,
     },
     {
         title: "Egg Toast",
-        category: "breakfast"
+        category: "breakfast",
+        price: 10,
     },
     {
         title: "Classic Burger",
-        category: "meal"
+        category: "meal",
+        price: 10,
     },
     {
         title: "Fried Chicken",
-        category: "meal"
+        category: "meal",
+        price: 10,
     },
     {
         title: "Spaghetti",
-        category: "meal"
+        category: "meal",
+        price: 10,
     },
     {
         title: "Chicken Tenders",
-        category: "sides"
+        category: "sides",
+        price: 10,
     },
     {
         title: "Fries",
-        category: "sides"
+        category: "sides",
+        price: 10,
     },
     {
         title: "Fish and Chips",
-        category: "sides"
+        category: "sides",
+        price: 10,
     },
     {
         title: "Chocolate Smoothie",
-        category: "drinks"
+        category: "drinks",
+        price: 10,
     },
     {
         title: "Mango Shake",
-        category: "drinks"
+        category: "drinks",
+        price: 10,
     },
     {
         title: "Strawberry Milkshake",
-        category: "drinks"
+        category: "drinks",
+        price: 10,
     },
-    // Add more menu items as needed
 ]
 
 interface menuTypes {
     title: string;
     category: string;
+    price: number;
 }
 
 const menuSection = document.querySelector('#MenuSection')!;
@@ -74,7 +86,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 function displayMenu(menu: menuTypes[]){
     let displayMenu: string | string[] = menu.map(function (item) {
-        return `<p>${item.title}</p><br>`
+        return `<p class="font-black">${item.title}</p> <p>$${item.price}</p> <br>`
     
        });
     
